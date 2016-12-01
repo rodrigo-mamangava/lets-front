@@ -1,0 +1,238 @@
+/*
+Theme URI: http://underscores.me/
+Author: Plau & Mamangava
+Description: Tema Wordpress criado pela Mamangava de acordo com layout da PLAU
+Version: 1.0.0
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+lets is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+        ## Links
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+        ## Posts and pages
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+
+
+// Core variables and mixins
+@import "bootstrap.less";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.navbar {
+    position: relative;
+    height: auto;
+    min-height: auto;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-default {
+    background-color: blue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Botoes
+--------------------------------------------------------------*/
+
+.btn-entrar{
+    .btn;
+    .button-variant(white, transparent, white);
+    //border-radius: 50px;
+}
+
+.btn-lupa{
+    .btn;
+    .button-variant(white, transparent, transparent);
+    border: 0;
+    border-radius: 50px;
+}
+
+.btn-tag{
+    .btn;
+    .button-variant(gray, lighten(gray, 13.5%), lighten(gray, 13.5%));
+    border-radius: 50px;
+
+}
+
+/*--------------------------------------------------------------
+# loop
+--------------------------------------------------------------*/
+.loop-item{
+
+    border-bottom: solid 1px gray;
+
+    .meta-data{
+        ul{
+            .list-inline;
+        }
+    }//meta-data
+
+    .item-titulo{
+        .titulo{
+            font-size: 45px;
+            font-size: 4.5rem 
+        }        
+    }//item-titulo
+
+    .item-texto{
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 1.5
+    }
+
+    .item-img{
+        img{
+            .img-responsive;
+        }
+
+        .links-cats-tags{
+            .list-unstyled;
+        }
+    }
+}//loop-item
+
+/*--------------------------------------------------------------
+# widget-area
+--------------------------------------------------------------*/
+.widget-area{
+
+    .widget{
+        h3{
+            border-bottom: 1px solid gray;
+
+        }
+
+        ul{
+            .list-unstyled;
+
+            li{
+                a{
+
+                }
+            }
+        }
+    }
+
+}//widget-area
+
+/*--------------------------------------------------------------
+# widget-area
+--------------------------------------------------------------*/
+
+.sigle-vitrine{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 50;
+
+    .single-header{
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: white;
+
+        h1{
+            padding-bottom: 15px;
+
+
+        }
+
+        .meta-links{
+            .list-inline;
+            .pull-left;
+        }
+
+        .social-links{
+            .list-inline;
+            .pull-right;
+
+        }
+    }
+
+}//sigle-vitrine
+
+.single-body{
+
+    .single-conteudo{
+
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        h2{
+            font-size: 26px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+    }//single-conteudo
+
+    .single-extra-links{
+
+        .links-cats-tags{
+            .list-inline;
+            .pull-left;
+
+
+        }
+
+        .social-links{
+            .list-inline;
+            .pull-right;
+            color: black;
+        }
+
+
+    }//single-extra-links
+
+    .single-author{
+
+        img{
+            .img-responsive;
+            border: 0.5px solid black;
+        }
+
+    }//single-author
+
+}//single-body
